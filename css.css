@@ -1,0 +1,350 @@
+/* SITE DM EMPRESARIAL — ESTILOS CSS*/
+
+/*  RESET E BASE  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+  color: #333333;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/*  MENU  */
+header {
+  background-color: #1a1a2e;
+  padding: 20px 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*  HERO  */
+.hero {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-selo {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 18px;
+  border-radius: 999px;
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #cccccc;
+  margin-bottom: 40px;
+}
+
+.hero-botoes {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.hero-disponivel {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 60px;
+}
+
+/*  BOTOES  */
+.btn-whatsapp {
+  background-color: #25d366;
+  color: #ffffff;
+  padding: 15px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*  CARDS DO HERO  */
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.home-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-top: 4px solid #4a9aa5;
+  border-radius: 8px;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.home-card h4 {
+  font-size: 18px;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+}
+
+.home-card p {
+  font-size: 15px;
+  color: #555555;
+}
+
+/*  NUMEROS DO HERO  */
+.home-numeros {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.numero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.numero-valor {
+  font-size: 42px;
+  font-weight: bold;
+  color: #4a9aa5;
+}
+
+.numero-label {
+  font-size: 14px;
+  color: #cccccc;
+}
+
+/*  ESTRUTURA DAS SECOES  */
+.icones {
+  width: 100%;
+}
+
+.icones > div {
+  padding: 60px 40px;
+}
+
+.etiqueta {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #4a9aa5;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.icones h3 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #1a1a2e;
+  text-align: center;
+}
+
+/*  SOBRE NOS  */
+#sobre {
+  background-color: #1a1a2e;
+  border-top: 4px solid #4a9aa5;
+}
+
+#sobre h3 {
+  color: #ffffff;
+}
+
+.sobre-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sobre-texto p {
+  color: #cccccc;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.sobre-valores h4 {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.sobre-valores ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sobre-valores ul li {
+  padding-left: 20px;
+  position: relative;
+  color: #cccccc;
+  font-size: 16px;
+}
+
+.sobre-valores ul li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #4a9aa5;
+}
+
+/*  SERVICOS  */
+#servicos {
+  border-top: 4px solid #4a9aa5;
+}
+
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.servico-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.servico-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.servico-card i {
+  font-size: 36px;
+  color: #4a9aa5;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.servico-card h4 {
+  font-size: 18px;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+}
+
+.servico-card p {
+  font-size: 15px;
+  color: #555555;
+}
+
+/*  CONTATOS  */
+#contatos {
+  background-color: #1a1a2e;
+  border-top: 4px solid #4a9aa5;
+}
+
+#contatos h3 {
+  color: #ffffff;
+}
+
+.contatos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.contatos-info p {
+  font-size: 16px;
+  color: #cccccc;
+  margin-bottom: 16px;
+}
+
+.contatos-info i {
+  color: #4a9aa5;
+  margin-right: 10px;
+}
+
+.contatos-cta {
+  background-color: #0f3460;
+  border-radius: 12px;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.contatos-cta p {
+  color: #cccccc;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.contatos-cta .btn-whatsapp {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/*  RODAPE  */
+footer {
+  background-color: #1a1a2e;
+  color: #aaaaaa;
+  text-align: center;
+  padding: 20px;
+}
