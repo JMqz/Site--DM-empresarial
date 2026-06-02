@@ -23,24 +23,26 @@ h1, h2, h3, h4 {
 /*  MENU  */
 header {
   background-color: #1a1a2e;
-  padding: 20px 40px;
+  padding: 0px 0px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 145px;
 }
 
 .logo {
-  height: 100px;
+  height: 200px;
   width: auto;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 40px;
+  font-size: 20px;
 }
 
 nav ul a {
