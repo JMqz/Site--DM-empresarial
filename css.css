@@ -23,18 +23,19 @@ h1, h2, h3, h4 {
 /*  MENU  */
 header {
   background-color: #1a1a2e;
-  padding: 0px 0px;
+  padding: 12px 40px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 145px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .logo {
-  height: 200px;
+  height: 180px;
   width: auto;
 }
 
@@ -43,6 +44,7 @@ nav ul {
   display: flex;
   gap: 40px;
   font-size: 20px;
+  
 }
 
 nav ul a {
@@ -349,4 +351,54 @@ footer {
   color: #aaaaaa;
   text-align: center;
   padding: 20px;
+}
+/*  RESPONSIVO — CELULAR  */
+@media (max-width: 768px) {
+
+  /* Menu em coluna */
+  nav {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  /* Cards do hero em coluna */
+  .home-cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* Numeros do hero em coluna */
+  .home-numeros {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* Sobre nos em coluna */
+  .sobre-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Servicos em coluna */
+  .servicos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contatos em coluna */
+  .contatos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Padding menor nas secoes */
+  .icones > div {
+    padding: 40px 20px;
+  }
+
+  /* Hero com menos espaco */
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
 }
