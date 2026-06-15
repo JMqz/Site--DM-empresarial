@@ -1,4 +1,4 @@
-/* SITE DM EMPRESARIAL — ESTILOS CSS*/
+/* SITE DM EMPRESARIAL — ESTILOS CSS */
 
 /*  VARIAVEIS DE COR  */
 :root {
@@ -59,7 +59,6 @@ nav ul {
   display: flex;
   gap: 40px;
   font-size: 20px;
-  
 }
 
 nav ul a {
@@ -303,13 +302,6 @@ nav ul a {
 .servico-card:hover { transform: translateY(-5px); }
 .servico-card:hover::after { opacity: 1; }
 
-.servico-card i {
-  font-size: 36px;
-  color: var(--color-teal);
-  margin-bottom: 16px;
-  display: block;
-}
-
 .servico-card h4 {
   font-size: 18px;
   color: var(--color-navy);
@@ -377,48 +369,41 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
 /*  RESPONSIVO — CELULAR  */
 @media (max-width: 768px) {
 
-  /* Menu em coluna */
   nav {
     flex-direction: column;
     gap: 16px;
     text-align: center;
   }
 
-  /* Cards do hero em coluna */
   .home-cards {
     grid-template-columns: 1fr;
   }
 
-  /* Numeros do hero em coluna */
   .home-numeros {
     flex-direction: column;
     gap: 30px;
   }
 
-  /* Sobre nos em coluna */
   .sobre-grid {
     grid-template-columns: 1fr;
   }
 
-  /* Servicos em coluna */
   .servicos-grid {
     grid-template-columns: 1fr;
   }
 
-  /* Contatos em coluna */
   .contatos-grid {
     grid-template-columns: 1fr;
   }
 
-  /* Padding menor nas secoes */
   .icones > div {
     padding: 40px 20px;
   }
 
-  /* Hero com menos espaco */
   .hero {
     padding: 60px 20px;
   }
