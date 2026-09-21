@@ -1,0 +1,18 @@
+<!-- Google tag (gtag.js) — cole dentro do <head> de TODAS as páginas, logo após <meta charset>.
+     Substitua G-XXXXXXXXXX pelo ID do GA4 e AW-XXXXXXXXXX pelo ID da conta do Google Ads. -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'granted',
+    'ad_user_data': 'granted',
+    'ad_personalization': 'granted',
+    'analytics_storage': 'granted'
+  });
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+  gtag('config', 'AW-XXXXXXXXXX');
+</script>
