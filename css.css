@@ -183,28 +183,37 @@ nav ul a:hover { color: var(--papel); border-bottom-color: var(--teal); }
   color: rgba(243, 239, 230, 0.55);
 }
 
-/* ficha tecnica: dados, nao cards */
-.hero-ficha { padding-top: 10px; }
-
-.hero-ficha dl { display: grid; gap: 0; }
-
-.hero-ficha div {
-  padding: 16px 0;
-  border-top: 1px solid var(--regua-escura);
+/* painel de credenciais: precisa de peso proprio para nao sumir
+   ao lado do titulo grande do hero. */
+.hero-ficha {
+  background: #222941;
+  border-left: 3px solid var(--teal);
+  padding: 32px 32px 36px;
 }
-.hero-ficha div:last-child { border-bottom: 1px solid var(--regua-escura); }
 
-.hero-ficha dt {
+.ficha-titulo {
   font-size: 13px;
-  letter-spacing: 0.02em;
-  color: rgba(243, 239, 230, 0.55);
-  margin-bottom: 2px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 22px;
 }
+
+.hero-ficha dl { display: grid; gap: 26px; }
 
 .hero-ficha dd {
   font-family: 'Libre Caslon Text', Georgia, serif;
-  font-size: 21px;
-  color: var(--teal);
+  font-size: 40px;
+  line-height: 1;
+  color: var(--creme);
+  margin-bottom: 6px;
+}
+
+.hero-ficha dt {
+  font-size: 14px;
+  line-height: 1.45;
+  color: rgba(243, 239, 230, 0.6);
+  max-width: 26ch;
 }
 
 /*  SITUACAO  */
